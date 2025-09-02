@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mini sitio · Contacto</title>
+  <meta name="description" content="Formulario accesible de contacto.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header" role="banner">
+    <div class="container">
+      <!-- Poner nombre de proyecto -->
+      <a class="brand" href="index.html">MERIDIANO</a>
+      <nav class="site-nav" aria-label="Principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="proyecto.html" >Proyecto</a></li>
+          <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+    <section class="container form-layout">
+          <div class="contact-form">
+          <h1>Contacto</h1>
+          <div class="wrap-form">
+          <form action="https://formspree.io/f/mldwlyoq" class="form" aria-describedby="ayuda-form" method="POST">
+            <p id="ayuda-form">Los campos marcados con <span aria-hidden="true">*</span> son obligatorios.</p>
+
+            <div class="form-control">
+              <label for="nombre">Nombre <span aria-hidden="true">*</span></label>
+              <input id="nombre" name="name" type="text" autocomplete="name" required>
+            </div>
+
+            <div class="form-control">
+              <label for="email">Correo <span aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+
+            <div class="form-control">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="message" rows="4"></textarea>
+            </div>
+
+            <!-- <p></p> vacío para guardar status de respuesta -->
+            <p id="form-status" aria-live="polite"></p>
+            <button class="button" id="submit" type="submit">Enviar</button>
+    
+          </form>
+        </div>
+        </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+        <div class="redes-sociales">
+            <h3>Síguenos en:</h3>
+            <ul>
+                <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                <li><a href="https://x.com/" target="_blank">X (Twitter)</a></li>
+            </ul>
+        </div>
+        <div class="info-tecnica">
+            <h3>Información Técnica</h3>
+            <p>Desarrollado por: Dylan y Nico</p>
+            <p>Versión: 1.0.0</p>
+            <p>Fecha de lanzamiento: Agosto 2025</p>
+            <p>Contacto: Meridiano@gmail.com</p>
+        </div>
+    </div>
+  </footer>
+</body>
+</html>
